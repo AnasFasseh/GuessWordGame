@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  width: 100%;
+}
+
+body {
+  background-color: #eee;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+}
+
+.container .game {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .game > div {
+  display: flex;
+  align-items: center;
+}
+
+.container .game > div > h3 {
+  margin-right: 10px;
+}
+
+.container .game > div > input {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 2px solid;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .game > div > input:focus {
+  outline: none;
+}
+.container .game div.btn-container .check {
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+  padding: 13px 100px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .game div.btn-container .check:hover {
+  background-color: rgb(241, 56, 56);
+}
+
+.container .game div.btn-container .hint {
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .game div.btn-container .hint:hover {
+  background-color: rgb(0, 175, 0);
+}
+
+.container .game .restart {
+  background-color: rgb(214, 139, 0);
+  color: white;
+  margin-right: 10px;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .game .restart:hover {
+  background-color: orange;
+}
+.container .game div.result span {
+  color: green;
+}
+
+.container .info-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .info-container h2 {
+  text-align: center;
+}
+
+.container .info-container .info {
+  background-color: white;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.container .info-container .info p {
+  font-weight: bold;
+}
+.container .info-container .info span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+}
+
+.in-place {
+  background-color: rgb(1, 128, 49);
+  color: white;
+}
+
+.not-in-place {
+  background-color: orange;
+  color: white;
+}
+
+.wrong {
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-Word</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Guess The Word</h1>
+    </div>
+
+    <div class="container">
+      <div class="game">
+        <div class="try1-container">
+          <h3>Try 1</h3>
+          <input type="text" class="try1-input" />
+          <input type="text" class="try1-input" />
+          <input type="text" class="try1-input" />
+          <input type="text" class="try1-input" />
+          <input type="text" class="try1-input" />
+          <input type="text" class="try1-input" />
+        </div>
+        <div class="try2-container disabled">
+          <h3>Try 2</h3>
+          <input type="text" class="try2-input disabled" />
+          <input type="text" class="try2-input disabled" />
+          <input type="text" class="try2-input disabled" />
+          <input type="text" class="try2-input disabled" />
+          <input type="text" class="try2-input disabled" />
+          <input type="text" class="try2-input disabled" />
+        </div>
+        <div class="try3-container disabled">
+          <h3>Try 3</h3>
+          <input type="text" class="try3-input disabled" />
+          <input type="text" class="try3-input disabled" />
+          <input type="text" class="try3-input disabled" />
+          <input type="text" class="try3-input disabled" />
+          <input type="text" class="try3-input disabled" />
+          <input type="text" class="try3-input disabled" />
+        </div>
+        <div class="try4-container disabled">
+          <h3>Try 4</h3>
+          <input type="text" class="try4-input disabled" />
+          <input type="text" class="try4-input disabled" />
+          <input type="text" class="try4-input disabled" />
+          <input type="text" class="try4-input disabled" />
+          <input type="text" class="try4-input disabled" />
+          <input type="text" class="try4-input disabled" />
+        </div>
+        <div class="try5-container disabled">
+          <h3>Try 5</h3>
+          <input type="text" class="try5-input disabled" />
+          <input type="text" class="try5-input disabled" />
+          <input type="text" class="try5-input disabled" />
+          <input type="text" class="try5-input disabled" />
+          <input type="text" class="try5-input disabled" />
+          <input type="text" class="try5-input disabled" />
+        </div>
+        <div class="btn-container">
+          <button class="check">Check Word</button>
+          <button class="hint"><span class="hint-num"></span> Hint</button>
+        </div>
+        <div>
+          <button class="restart">Restart</button>
+        </div>
+        <div class="result">
+          <h3></h3>
+        </div>
+      </div>
+      <div class="info-container">
+        <h2>Key Colors</h2>
+        <div class="info">
+          <span class="in-place"></span>
+          <p>Letter Is Right And In Place</p>
+        </div>
+        <div class="info">
+          <span class="not-in-place"></span>
+          <p>Letter Is Right But Not In Place</p>
+        </div>
+        <div class="info">
+          <span class="wrong"></span>
+          <p>Letter Is Wrong And Not Exists In Word</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Guess The Word</h2>
+      <p>Created By AnasFasseh</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
